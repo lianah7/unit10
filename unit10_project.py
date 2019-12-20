@@ -21,7 +21,7 @@ main_surface.fill((255, 255, 255))
 my_target = target.Target(main_surface)
 circles = [(BLACK, 202, 1), (WHITE, 200, 1), (BLACK, 160, 0), (BLUE, 120, 0), (RED, 80, 0), (YELLOW, 40, 0)]
 for x in circles:
-    my_target.target_circle(x)
+    my_target.draw_target(x)
 
 
 while True:
