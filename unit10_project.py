@@ -23,6 +23,7 @@ circles = [(BLACK, 202, 1), (WHITE, 200, 1), (BLACK, 160, 0), (BLUE, 120, 0), (R
 for x in circles:
     my_target.draw_target(x)
 
+num_clicks = 0
 
 while True:
     pygame.display.update()
@@ -30,4 +31,7 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
+        if event.type == MOUSEBUTTONDOWN and num_clicks < 5:
+            my_target.get_score(pygame.mouse.get_pos())
+            num_clicks += 1
 
