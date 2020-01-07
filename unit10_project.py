@@ -17,6 +17,7 @@ BLUE = (0, 0, 255)
 RED = (255, 0, 0)
 YELLOW = (255, 255, 0)
 
+# the following lines of code draws the target's different circles
 main_surface.fill((255, 255, 255))
 my_target = target.Target(main_surface)
 circles = [(BLACK, 202, 1), (WHITE, 200, 1), (BLACK, 160, 0), (BLUE, 120, 0), (RED, 80, 0), (YELLOW, 40, 0)]
